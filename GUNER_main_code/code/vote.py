@@ -204,19 +204,22 @@ def save_submit(datalist, save_path):
                 f.write(text+'\n')
 
 def end_processing(res_path, end_process_savepath):
-    pu_list = ['，' ,'。' ,',','.']
+    pu_list = ['，' ,'。' ,',','.','所料','之']
+    OFI_list = ['參議中書省事','參知政事','行尚書省','御史臺臣']
     with open(res_path,'r') as f:
         with open(end_process_savepath,'w') as f1:
             for lines in f.readlines():
                 line = lines.strip("\n")
+                for i in OFI_list:
+                    if i in line:
+                        line = line.replace(i,'{'+i+'|OFI}')
                 matches = re.findall(r"\{[^{}]*\}", line)
                 temp_list = []
                 if matches:
                     for match in matches:
-                        for char in match:
-                            if char in pu_list:
-                                print(match)
-                                temp_list.append(match)
+                        if match.split("|")[0][1:] in pu_list:
+                            print(match)
+                            temp_list.append(match)
                     if len(temp_list)>0:
                         temp_str = ""
                         for i in temp_list:
