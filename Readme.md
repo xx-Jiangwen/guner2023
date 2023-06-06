@@ -4,7 +4,7 @@
  * @Author: Smallxiaoxin
  * @Date: 2023-06-06 11:00:23
  * @LastEditors: Smallxiaoxin
- * @LastEditTime: 2023-06-06 20:52:24
+ * @LastEditTime: 2023-06-06 20:53:30
 -->
 # 预训练模型
 本次比赛采用的预训练模型为：bert-ancient-chinese
@@ -26,7 +26,7 @@ Hugging Face:https://huggingface.co/Jihuai/bert-ancient-chinese
 
 共计137044，并且与测试集做了去重操作，数据位于/data/add_data/unlabel_24_history
 
-预训练脚本：run_pretrain_mlm.py
+预训练脚本：python /GUNER_main_code/code/run_pretrain_mlm.py
 
 本次比赛采用BERT+GlobalPointer的网络结构，同时实验了BERT+CRF等多种模型
 
@@ -86,4 +86,6 @@ python GUNER_main_code/code/vote.py
 
 放入到/output文件夹下
 
+# 最优提交结果
 
+/output/best_res.txt
