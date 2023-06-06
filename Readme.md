@@ -57,9 +57,9 @@ python GUNER_main_code/code/vote.py
 
 本次比赛采用了伪标签手段
 
-原始无标签数据：/home/jw/CCL_Guner2023/data/unlabel_data_res/pseudos.txt
+原始无标签数据：/data/unlabel_data_res/pseudos.txt
 
-匹配训练数据样式：/home/jw/CCL_Guner2023/data/unlabel_data_res/all_pseudos.json
+匹配训练数据样式：/data/unlabel_data_res/all_pseudos.json
 
 
 
