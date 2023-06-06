@@ -4,7 +4,7 @@
  * @Author: Smallxiaoxin
  * @Date: 2023-06-06 11:00:23
  * @LastEditors: Smallxiaoxin
- * @LastEditTime: 2023-06-06 20:50:40
+ * @LastEditTime: 2023-06-06 20:52:24
 -->
 # 预训练模型
 本次比赛采用的预训练模型为：bert-ancient-chinese
@@ -84,5 +84,6 @@ python GUNER_main_code/code/vote.py
 链接：https://pan.baidu.com/s/1R-A3F2gwh1EI5r-nfsNceg 
 提取码：GUNE
 
+放入到/output文件夹下
 
 
