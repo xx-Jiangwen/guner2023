@@ -4,15 +4,15 @@ version:
 Author: Smallxiaoxin
 Date: 2023-04-24 09:58:54
 LastEditors: Smallxiaoxin
-LastEditTime: 2023-06-05 17:31:59
+LastEditTime: 2023-06-06 11:18:08
 '''
 # coding:utf-8
 
 import json
 
 
-ori_path ="/home/jw/CCL_Guner2023/output/unlabel_data_res/pseudos+vote_5old_end.txt"
-save_BIO_path =  "/home/jw/CCL_Guner2023/output/unlabel_data_res/pseudos+vote_5old+end_BIO.txt"
+ori_path ="/home/jw/CCL_Guner2023/data/train_data/GuNER2023_train.txt"
+save_BIO_path =  "/home/jw/CCL_Guner2023/data/train_data/GuNER2023_train_BIO.txt"
 
 with open(ori_path,'r') as f:
     with open(save_BIO_path,'w') as f1:

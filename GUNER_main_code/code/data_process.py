@@ -96,7 +96,7 @@ def convert_json(train_path, save_path):
     with open(os.path.join(save_path, 'ent2id.json'), 'w', encoding='utf-8') as f:
         f.write(json.dumps(label_dic, ensure_ascii=False, indent=4))
 
-    with open(os.path.join(save_path, 'all_train_new.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(save_path, 'all_train.json'), 'w', encoding='utf-8') as f:
         f.write(json.dumps(datalist, ensure_ascii=False, indent=4))
 
 

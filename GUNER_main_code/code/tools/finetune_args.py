@@ -4,7 +4,7 @@ version:
 Author: Smallxiaoxin
 Date: 2023-04-24 09:58:54
 LastEditors: Smallxiaoxin
-LastEditTime: 2023-06-06 10:43:36
+LastEditTime: 2023-06-06 11:26:28
 '''
 # coding:utf-8
 
@@ -20,7 +20,7 @@ def finetune(params=None):
     parser.add_argument("--model_type", type=str, default='bert')
 
     parser.add_argument("--train_file", type=str,
-                        default='/home/jw/CCL_Guner2023/data/train_json/ori_trian/all_train_new.json')
+                        default='/home/jw/CCL_Guner2023/data/train_json/ori_trian/all_train.json')
     parser.add_argument("--test_file", type=str,
                         default='/home/jw/CCL_Guner2023/data/test_data/GuNER2023_test_public.txt')
     parser.add_argument("--ent2id_path", type=str,

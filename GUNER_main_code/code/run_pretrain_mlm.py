@@ -1,13 +1,5 @@
 # coding:utf-8
 
-"""
-Field data pretraining
-Only use 100w unlabeled data.
-
-Task data pretraining
-Only use 4w labeled data and 1w test data.
-"""
-
 
 import gc
 import re
