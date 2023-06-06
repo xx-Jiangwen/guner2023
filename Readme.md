@@ -4,8 +4,14 @@
  * @Author: Smallxiaoxin
  * @Date: 2023-06-06 11:00:23
  * @LastEditors: Smallxiaoxin
- * @LastEditTime: 2023-06-06 19:15:13
+ * @LastEditTime: 2023-06-06 19:26:20
 -->
+# 预训练模型
+本次比赛采用的预训练模型为：bert-ancient-chinese
+以下为链接：
+Github：https://github.com/Jihuai-wpy/bert-ancient-chinese
+Hugging Face:https://huggingface.co/Jihuai/bert-ancient-chinese
+
 # 预训练阶段
 本文采用了动态预训练策略
 
@@ -61,5 +67,16 @@ python GUNER_main_code/code/vote.py
 
 匹配训练数据样式：/data/unlabel_data_res/all_pseudos.json
 
+# 训练好的模型
+
+基于bert-ancient-chinese的再训练模型：
+
+链接：https://pan.baidu.com/s/1nMvq8rZ2CSxXoykIRmzBAw 
+提取码：GUNE
+
+最优的模型保存：
+
+链接：https://pan.baidu.com/s/1R-A3F2gwh1EI5r-nfsNceg 
+提取码：GUNE
 
 
