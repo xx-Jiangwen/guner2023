@@ -8,8 +8,11 @@
 -->
 # 预训练模型
 本次比赛采用的预训练模型为：bert-ancient-chinese
+
 以下为链接：
+
 Github：https://github.com/Jihuai-wpy/bert-ancient-chinese
+
 Hugging Face:https://huggingface.co/Jihuai/bert-ancient-chinese
 
 # 预训练阶段
