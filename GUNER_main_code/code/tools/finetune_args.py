@@ -4,7 +4,7 @@ version:
 Author: Smallxiaoxin
 Date: 2023-04-24 09:58:54
 LastEditors: Smallxiaoxin
-LastEditTime: 2023-05-31 20:34:14
+LastEditTime: 2023-06-06 10:43:36
 '''
 # coding:utf-8
 
@@ -30,13 +30,13 @@ def finetune(params=None):
                         default='/home/jw/CCL_Guner2023/output/pretrain_model_mlm_200')
     
     parser.add_argument('--output_dir', type=str,
-                         default='/home/jw/CCL_Guner2023/output/pre_model_200/fgm_all+swa+5fold+pseudos/model_ancientbert')
+                         default='/home/jw/CCL_Guner2023/output/pre_model_200/fgm_all+swa+5fold/model_ancientbert')
     
     parser.add_argument('--output_dir_best', type=str,
-                        default= '/home/jw/CCL_Guner2023/output/pre_model_200/fgm_all+swa+5fold+pseudos/eval_best')
+                        default= '/home/jw/CCL_Guner2023/output/pre_model_200/fgm_all+swa+5fold/eval_best')
     
     parser.add_argument('--save_path', type=str,
-                        default= '/home/jw/CCL_Guner2023/output/pre_model_200/fgm_all+swa+5fold+pseudos/submissions')
+                        default= '/home/jw/CCL_Guner2023/output/pre_model_200/fgm_all+swa+5fold/submissions')
     
     parser.add_argument('--save_pseudos_path', type=str,
                     default= '/home/jw/CCL_Guner2023/output/unlabel_data_res')

@@ -1,13 +1,14 @@
-# 1、为预训练准备数据，结果在temp/tmp_data下
 ###
  # @Descripttion: 
  # @version: 
  # @Author: Smallxiaoxin
  # @Date: 2023-04-24 09:58:54
  # @LastEditors: Smallxiaoxin
- # @LastEditTime: 2023-04-24 16:36:15
+ # @LastEditTime: 2023-06-06 10:49:53
 ### 
-echo "准备预训练所需要数据"
+'''
+准备预训练所需要数据
+'''
 python code/process_data.py
 
 
