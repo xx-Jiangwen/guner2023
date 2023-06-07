@@ -4,8 +4,30 @@
  * @Author: Smallxiaoxin
  * @Date: 2023-06-06 11:00:23
  * @LastEditors: Smallxiaoxin
- * @LastEditTime: 2023-06-06 20:53:30
+ * @LastEditTime: 2023-06-07 10:49:44
 -->
+
+#文件夹说明：
+data ---数据文件夹
+
+  ->/add_data/unlabel_24_history.txt --- 预训练数据
+
+  ->/test_data/GuNER2023_test_public.txt --- 测试集数据
+
+  ->/train_data/GuNER2023_train.txt --- 原始训练集数据
+
+  ->/train_data/GuNER2023_train_BIO.txt --- BIO格式训练集数据
+
+  ->/train_json/ori_trian/all_train.json --- json格式训练集数据
+
+  ->/train_json/ent2id.json --- 实体标签
+
+  ->/unlabel_data_res/pseudos.txt --- 伪标签数据
+
+GUNER_main_code --- 主要的训练代码
+
+output --- 输出路径
+
 # 预训练模型
 本次比赛采用的预训练模型为：bert-ancient-chinese
 
@@ -79,7 +101,7 @@ python GUNER_main_code/code/vote.py
 
 放入到/output文件夹下
 
-最优的模型保存：
+训练中最优的模型保存：
 
 链接：https://pan.baidu.com/s/1R-A3F2gwh1EI5r-nfsNceg 
 提取码：GUNE
