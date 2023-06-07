@@ -7,7 +7,7 @@
  * @LastEditTime: 2023-06-07 10:49:44
 -->
 
-#文件夹说明：
+# 文件夹说明：
 data ---数据文件夹
 
   ->/add_data/unlabel_24_history.txt --- 预训练数据
