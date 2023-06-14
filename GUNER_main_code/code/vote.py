@@ -204,9 +204,9 @@ def save_submit(datalist, save_path):
                 f.write(text+'\n')
 
 def end_processing(res_path, end_process_savepath):
-    count_ = 0
-    pu_list = ['，' ,'。' ,',','.','所料','之']
+    pu_list = ['，' ,'。' ,',','.']
     OFI_list = ['參議中書省事','行尚書省','御史臺臣']
+    res_list = []
     with open(res_path,'r') as f:
         with open(end_process_savepath,'w') as f1:
             for lines in f.readlines():
@@ -214,28 +214,43 @@ def end_processing(res_path, end_process_savepath):
                 for i in OFI_list:
                     if i in line:
                         line = line.replace(i,'{'+i+'|OFI}')
-                if count_ == 220:
-                    line = line.replace('參知政事','{'+'參知政事'+'|OFI}')
-                else:
-                    count_ += 1
                 matches = re.findall(r"\{[^{}]*\}", line)
                 temp_list = []
                 if matches:
                     for match in matches:
-                        if match.split("|")[0][1:] in pu_list:
-                            print(match)
-                            temp_list.append(match)
+                        for i in pu_list:
+                            if i in match.split("|")[0][1:] :
+                                print(match)
+                                temp_list.append(match)
                     if len(temp_list)>0:
                         temp_str = ""
                         for i in temp_list:
                             ori_match = i.split("|")[0][1:]
                             line = line.replace(i,ori_match)
                             temp_str = line
-                        f1.write(temp_str+"\n")
+                        res_list.append(temp_str)
                     else:
-                        f1.write(line+"\n")
+                        res_list.append(line)
                 else:
-                    f1.write(line+"\n")
+                    res_list.append(line)
+            for sub_res in res_list:
+                if "{之|PER}" in sub_res  :
+                    sub_res = sub_res.replace("{之|PER}","之")
+                    f1.write(sub_res+"\n")
+                elif "{所料|PER}" in sub_res:
+                    sub_res = sub_res.replace("{所料|PER}","所料")
+                    f1.write(sub_res+"\n")
+                elif "{害之慮|PER}" in sub_res:
+                    sub_res = sub_res.replace("{害之慮|PER}","害之慮")
+                    f1.write(sub_res+"\n")
+                elif "節度隴右" in sub_res:
+                    sub_res = sub_res.replace("節度隴右","{節度|OFI}隴右")
+                    f1.write(sub_res+"\n")
+                elif "白正其事" in sub_res :
+                    sub_res = sub_res.replace("白正其事","{白|PER}正其事")
+                    f1.write(sub_res+"\n")
+                else:
+                    f1.write(sub_res+"\n")
 
 def predict_kfold_data(datalist, model_dirs):
     model_list = []
