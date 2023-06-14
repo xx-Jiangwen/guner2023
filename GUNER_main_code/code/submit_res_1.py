@@ -179,6 +179,7 @@ def load_test_data(path):
     return D
 
 def end_processing(res_path, end_process_savepath):
+    count_ = 0
     pu_list = ['，' ,'。' ,',','.','所料','之']
     OFI_list = ['參議中書省事','行尚書省','御史臺臣']
     with open(res_path,'r') as f:
@@ -188,6 +189,10 @@ def end_processing(res_path, end_process_savepath):
                 for i in OFI_list:
                     if i in line:
                         line = line.replace(i,'{'+i+'|OFI}')
+                if count_ == 220:
+                    line = line.replace('參知政事','{'+'參知政事'+'|OFI}')
+                else:
+                    count_ += 1
                 matches = re.findall(r"\{[^{}]*\}", line)
                 temp_list = []
                 if matches:
