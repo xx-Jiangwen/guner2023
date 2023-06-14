@@ -180,7 +180,7 @@ def load_test_data(path):
 
 def end_processing(res_path, end_process_savepath):
     pu_list = ['，' ,'。' ,',','.','所料','之']
-    OFI_list = ['參議中書省事','參知政事','行尚書省','御史臺臣']
+    OFI_list = ['參議中書省事','行尚書省','御史臺臣']
     with open(res_path,'r') as f:
         with open(end_process_savepath,'w') as f1:
             for lines in f.readlines():
