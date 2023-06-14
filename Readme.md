@@ -4,7 +4,7 @@
  * @Author: Smallxiaoxin
  * @Date: 2023-06-06 11:00:23
  * @LastEditors: Smallxiaoxin
- * @LastEditTime: 2023-06-07 10:49:44
+ * @LastEditTime: 2023-06-14 22:30:23
 -->
 
 # 文件夹说明：
@@ -103,7 +103,7 @@ python GUNER_main_code/code/vote.py
 
 训练中最优的模型保存：
 
-链接：https://pan.baidu.com/s/1R-A3F2gwh1EI5r-nfsNceg 
+链接：https://pan.baidu.com/s/1H-C2yK1DYrbf99qwg94JaQ 
 提取码：GUNE
 
 放入到/output文件夹下
